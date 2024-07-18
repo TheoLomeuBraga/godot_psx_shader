@@ -11,7 +11,8 @@ void fragment() {
 	
 	vec4 final_color = color * texture(tex, UV) * COLOR;
 	ALBEDO = final_color.rgb;
-    
+    ALPHA = final_color.a;
+
 }
 
 //void light() {
